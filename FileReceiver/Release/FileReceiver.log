@@ -1,0 +1,36 @@
+﻿Build started 06/04/2012 02:49:45.
+     1>Project "C:\Users\Will\documents\visual studio 2010\Projects\FileSender\FileReceiver\FileReceiver.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\Users\Will\documents\visual studio 2010\Projects\FileSender\Release\".
+       InitializeBuildStatus:
+         Creating "Release\FileReceiver.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt FileOutput.cpp PacketList.cpp Receiver.cpp RecvNetwork.cpp
+         FileOutput.cpp
+     1>FileOutput.cpp(17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         PacketList.cpp
+         Receiver.cpp
+         RecvNetwork.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Will\documents\visual studio 2010\Projects\FileSender\Release\FileReceiver.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\FileReceiver.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Will\documents\visual studio 2010\Projects\FileSender\Release\FileReceiver.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Will\documents\visual studio 2010\Projects\FileSender\Release\FileReceiver.lib" /MACHINE:X86 Release\FileOutput.obj
+         Release\PacketList.obj
+         Release\Receiver.obj
+         Release\RecvNetwork.obj
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__closesocket@4
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__socket@12
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__bind@12
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__WSACleanup@0
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__sendto@24
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__setsockopt@20
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__htons@4
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__WSAGetLastError@0
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__htonl@4
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__recvfrom@24
+     1>RecvNetwork.obj : error LNK2001: unresolved external symbol __imp__WSAStartup@8
+     1>C:\Users\Will\documents\visual studio 2010\Projects\FileSender\Release\FileReceiver.exe : fatal error LNK1120: 11 unresolved externals
+     1>Done Building Project "C:\Users\Will\documents\visual studio 2010\Projects\FileSender\FileReceiver\FileReceiver.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.83
